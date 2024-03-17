@@ -42,7 +42,7 @@ export default function LoginSignup({setloggedin}) {
 
     const response  = await fetch(lurl,{
       method:"POST",
-      mode:"same-origin",
+      mode:"cors",
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       credentials: "same-origin", // include, *same-origin, omit
        headers: {
