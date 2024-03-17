@@ -25,7 +25,7 @@ export default function Shopcategory(props) {
     category:props.category,
   }
   
-  const url = "http://localhost:4000/getcategory"
+  const url = "https://backend-4-zfpb.onrender.com/getcategory"
   async function  getdata(){
     const response = await fetch(url,{
       method:"POST",
