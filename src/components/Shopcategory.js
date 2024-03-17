@@ -29,7 +29,7 @@ export default function Shopcategory(props) {
   async function  getdata(){
     const response = await fetch(url,{
       method:"POST",
-      mode:"no-cors",
+      mode:"cors",
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       credentials: "same-origin", // include, *same-origin, omit
        headers: {
