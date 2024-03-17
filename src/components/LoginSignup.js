@@ -9,8 +9,8 @@ export default function LoginSignup({setloggedin}) {
   const toast5 = ()=>toast.success("Logged in");
 
   const notify3 = ()=>toast.error("Inavlid Details");
-  const url = "http://localhost:4000/signup";
-  const lurl = "http://localhost:4000/login"
+  const url = "https://backend-4-zfpb.onrender.com/signup";
+  const lurl = "https://backend-4-zfpb.onrender.com/login"
   async function signupaccount(){
     const response = await fetch(url,{
       method:"POST",
