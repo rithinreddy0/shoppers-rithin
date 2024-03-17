@@ -5,7 +5,7 @@ export default function Admin() {
     const notify10=()=>{toast.success("Product created Successfully")}
     const notify1=()=>{toast.error("Failed")}
     const [image,setimage] = useState();
-    const url = "http://localhost:4000/createproduct"
+    const url = "https://backend-4-zfpb.onrender.com/createproduct"
     const [data,setdata] = useState({name:"",description:"",oldPrice:"",newPrice:"",category:""});
     const cangehandler = e => {
         setdata({...data, [e.target.name]: e.target.value})
