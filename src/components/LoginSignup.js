@@ -14,7 +14,7 @@ export default function LoginSignup({setloggedin}) {
   async function signupaccount(){
     const response = await fetch(url,{
       method:"POST",
-      mode:"cors",
+      mode:"no-cors",
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       credentials: "same-origin", // include, *same-origin, omit
        headers: {
@@ -40,7 +40,7 @@ export default function LoginSignup({setloggedin}) {
 
     const response  = await fetch(lurl,{
       method:"POST",
-      mode:"cors",
+      mode:"no-cors",
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       credentials: "same-origin", // include, *same-origin, omit
        headers: {
