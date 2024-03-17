@@ -14,7 +14,11 @@ export default function LoginSignup({setloggedin}) {
   async function signupaccount(){
     const response = await fetch(url,{
       method:"POST",
+      mode:"cors",
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       
+      redirect: "follow", // manual, *follow, error
+      referrerPolicy: "no-referrer",
        headers: {
           "Content-Type": "application/json",
               // 'Content-Type': 'application/x-www-form-urlencoded',
