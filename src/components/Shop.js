@@ -11,8 +11,7 @@ export default function Shop() {
     const url = "https://backend-4-zfpb.onrender.com/getallproducts"
     async function receivedata(){
       const response = await fetch(url,{
-        mode:"no-cors",
-                                  );
+        mode:"no-cors"});
       const data = await response.json();
       setproducts(data.data);
      
