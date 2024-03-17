@@ -8,7 +8,7 @@ export default function Shop() {
     useEffect(()=>{
       receivedata();
     })
-    const url = "http://localhost:4000/getallproducts"
+    const url = "https://backend-4-zfpb.onrender.com/getallproducts"
     async function receivedata(){
       const response = await fetch(url);
       const data = await response.json();
